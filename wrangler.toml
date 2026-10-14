@@ -1,0 +1,22 @@
+# Zash · Zcash en español, gratis y de código abierto. Secretos (BOT_TOKEN, WEBHOOK_SECRET, RELOJ_SECRET, ADMIN_IDS) en Cloudflare.
+name = "zash-bot"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_als"]  # país de quien habla con el bot (src/region.js)
+workers_dev = true
+preview_urls = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "zash-bot"
+database_id = "dbb08862-ffc0-4ca4-92d7-6fc1a00df15d"
+migrations_dir = "migrations"
+
+[ai]
+binding = "AI"  # IA gratuita de Cloudflare: entender texto libre y responder preguntas sobre Zcash
+
+[triggers]
+crons = []  # el reloj (ribera-reloj) llama a /tick cada minuto
+
+[observability]
+enabled = true

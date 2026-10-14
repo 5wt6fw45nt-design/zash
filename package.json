@@ -1,0 +1,9 @@
+{
+  "name": "zash-bot",
+  "version": "1.0.0",
+  "description": "Zash: Zcash en español, gratis y de código abierto. Bot de Telegram (Cloudflare Worker + D1).",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.13" },
+  "scripts": { "test": "node --test", "deploy": "wrangler deploy", "logs": "wrangler tail" }
+}
