@@ -278,6 +278,8 @@ export function createBot({ api, db, cfg, clock = Date.now, ai = null, data = { 
     if (u.callback_query) return onCallback(u.callback_query);
     const msg = u.message;
     if (!msg?.from || msg.chat.type !== 'private') return;
+    // Avisos de servicio (p. ej. «mensaje fijado», que firma el propio bot): no son de una persona
+    if (msg.from.is_bot || msg.pinned_message) return;
     if (!msg.text) return reply(msg.chat.id, 'Por ahora entiendo texto: escríbeme tu pregunta o usa los botones de abajo 👇');
     const user = await db.upsertUser(msg.from, now);
     if (!msg.text.startsWith('/')) return onText(msg, user, now);
