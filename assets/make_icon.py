@@ -4,6 +4,10 @@ Zash: dorado de Zcash, Z blanca e insignia con candado (privacidad).
 Uso: python3 make_icon.py [salida.png]
 """
 import sys
+if '--forzar' not in sys.argv:
+    sys.exit('Icono antiguo: el icono actual se hizo a mano (16/10/2026). Ejecutar esto lo pisaría. Si de verdad quieres el antiguo: python3 make_icon.py --forzar')
+
+import sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
