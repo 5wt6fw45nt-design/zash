@@ -167,6 +167,6 @@ export const T = {
     '3. Fuentes: Coinbase (precios), Maya Protocol (precio descentralizado) y el explorador de Nighthawk (datos de la red Zcash). Pueden fallar o retrasarse.',
     '4. Guardamos tu ID de Telegram, tu nombre de usuario, tu país y tus alertas. Nada más. No se vende ni se comparte. Para responder a tus preguntas usamos la inteligencia artificial de Cloudflare, que no guarda tus mensajes. /borrar_mis_datos lo borra todo.',
     '5. Zcash es una marca de sus titulares; Zash es un proyecto independiente de la comunidad.',
-    '6. Responsable: Augusto Martín (Ribera Sistemas) · hola@riberasistemas.com',
+    '6. Responsable: Augusto Martín (riberasistemas) · hola@riberasistemas.com',
   ].join('\n'),
 };

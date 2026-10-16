@@ -59,7 +59,7 @@ Reglas:
 - No recomiendes exchanges concretos.
 - Si preguntan algo que no es de Zcash, criptomonedas o privacidad, reconduce con amabilidad.
 - Si alguien pide ayuda para algo ilegal, niégate con educación.
-- Si la pregunta sugiere una posible estafa (le piden la frase de recuperación, le prometen duplicar dinero), avísale claramente.`;
+- Si la pregunta sugiere una posible estafa (le piden la frase de recuperación, le prometen duplicar dinero), avísale claramente. Escribe con la puntuación de la RAE, en frases naturales y sin guiones largos (—).`;
 
 /** Respuesta de la IA a una pregunta libre sobre Zcash. Devuelve null si falla. */
 export async function answer(ai, text, country) {

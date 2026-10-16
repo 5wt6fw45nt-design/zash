@@ -72,4 +72,4 @@ Guarda solo el ID de Telegram, el nombre de usuario, el país y las alertas. No 
 
 ## Licencia
 
-[MIT](LICENSE) · Un proyecto de Ribera Sistemas. Zcash es una marca de sus titulares; Zash es un proyecto independiente de la comunidad.
+[MIT](LICENSE) · Un proyecto de riberasistemas. Zcash es una marca de sus titulares; Zash es un proyecto independiente de la comunidad.
